@@ -1,10 +1,11 @@
 {
   "{{chrome}}.manifest_version": 3,
   "{{firefox}}.manifest_version": 2,
-  "name": "Youtube Playlist Duration Calculator",
-  "short_name": "YTPD Calc",
+  "name": "Custom Youtube Playlist Duration Calculator",
+  "short_name": "CYTPD Calc",
   "description": "An extension to calculate & display the total duration of a youtube playlist.",
   "default_locale": "en",
+  "version": "2.2.0",
   "icons": {
     "128": "icon128.png",
     "48": "icon48.png",
@@ -28,5 +29,10 @@
     }
   ],
   "{{chrome}}.host_permissions": ["https://www.youtube.com/*"],
-  "{{firefox}}.permissions": ["https://www.youtube.com/*"]
+  "{{firefox}}.permissions": ["https://www.youtube.com/*"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "will0912@CYTPD_Calculator"
+    }
+  }
 }

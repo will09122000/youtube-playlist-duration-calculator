@@ -474,7 +474,7 @@ const createPlaylistSummaryElement = ({
     "#fdba74"
   );
 
-  containerElement.appendChild(videosCounted);
+  // containerElement.appendChild(videosCounted);
 
   const totalVideosInPlaylist = countTotalVideosInPlaylist();
   const videosNotCounted = createSummaryItem(
@@ -485,15 +485,15 @@ const createPlaylistSummaryElement = ({
     "#fca5a5"
   );
 
-  containerElement.appendChild(videosNotCounted);
+  // containerElement.appendChild(videosNotCounted);
 
   if (totalVideosInPlaylist <= 100) {
     if (window.ytpdc.sortDropdown.element) {
-      containerElement.appendChild(window.ytpdc.sortDropdown.element);
+      // containerElement.appendChild(window.ytpdc.sortDropdown.element);
     } else {
       const sortDropdown = createSortDropdown(playlistObserver);
       window.ytpdc.sortDropdown.element = sortDropdown;
-      containerElement.appendChild(sortDropdown);
+      // containerElement.appendChild(sortDropdown);
     }
   }
 

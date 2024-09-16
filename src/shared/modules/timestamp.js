@@ -62,7 +62,7 @@ export const getTimestampFromVideo = (video) => {
   );
 
   if (matches) {
-    return convertTimestampToSeconds(matches[0]);
+    return Math.floor(convertTimestampToSeconds(matches[0]) / 1.25);
   } else {
     // Timestamp exists but does not match hh:mm:ss, treat it as 0 seconds
     return 0;

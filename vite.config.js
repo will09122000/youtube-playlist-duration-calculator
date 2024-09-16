@@ -17,7 +17,7 @@ export default defineConfig(({ mode }) => {
       webExtension({
         manifest: generateManifest,
         watchFilePaths: ["package.json", "src/manifest.json"],
-        browser: env.VITE_TARGET_BROWSER || "chrome",
+        browser: env.VITE_TARGET_BROWSER || "firefox",
         webExtConfig: {
           startUrl: [
             "https://www.youtube.com/playlist?list=PLAhTBeRe8IhMmRve_rSfAgL_dtEXkKh8Z",

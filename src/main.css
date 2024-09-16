@@ -1,5 +1,5 @@
 #ytpdc-loader {
-  min-height: 128px;
+  min-height: 32px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -19,7 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  min-height: 128px;
+  min-height: 32px;
   margin: 16px 0px;
   padding: 16px;
   border-radius: 16px;
